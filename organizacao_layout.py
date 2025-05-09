@@ -104,31 +104,44 @@ def organizacao1():
     # EXEMPLO: CRIAR UMA NOVA JANELA INDEPENDENTE''').pack()
     
 
+
+
 def grids():
     root = tk.Tk()
     root.title("ORGANIZAÇÃO")
-    root.geometry("500x800")
+    root.geometry("450x450")
     root.config(bg="#f2f2f2")
-     # Grid()    
-    grid_lbl = tk.Label(root, text="GRID", font="Arial,16,Bold").pack(padx=200, anchor="w")
-    descGrid = tk.Label(root, text='''.grid(  )
-    # Organiza os widgets em uma grade
-    # EXEMPLO: ORGANIZAR OS WIDGETS EM UMA GRADE''').pack()
+
+    # Título e descrição
+    tk.Label(root, text="GRID", font=("Arial", 16, "bold")).grid(row=0, column=0, columnspan=2, sticky="w", padx=10, pady=10)
+    tk.Label(root, text='''.grid(  )
+# Organiza os widgets em uma grade
+# EXEMPLO: ORGANIZAR OS WIDGETS EM UMA GRADE''').grid(row=1, column=0, columnspan=2, sticky="w", padx=10)
+
+    # Frames organizados em grade
     grid_frame = tk.Frame(root, bg="lightgreen", width=200, height=60)
-    grid_frame.pack(row=10, column=0, padx=10, pady=10)
+    grid_frame.grid(row=2, column=0, padx=10, pady=10)
+
     grid_frame2 = tk.Frame(root, bg="lightyellow", width=200, height=60)
-    grid_frame2.pack(row=10, column=1, padx=10, pady=10)
+    grid_frame2.grid(row=2, column=1, padx=10, pady=10)
+
     grid_frame3 = tk.Frame(root, bg="lightpink", width=200, height=60)
-    grid_frame3.pack(row=11, column=0, padx=10, pady=10)
+    grid_frame3.grid(row=3, column=0, padx=10, pady=10)
+
     grid_frame4 = tk.Frame(root, bg="lightgray", width=200, height=60)
-    grid_frame4.pack(row=11, column=1, padx=10, pady=10)
+    grid_frame4.grid(row=3, column=1, padx=10, pady=10)
+
+   
+
+
+
 
 
 def place():
 
     root = tk.Tk()
     root.title("ORGANIZAÇÃO")
-    root.geometry("500x800")
+    root.geometry("1000x600")
     root.config(bg="#f2f2f2")
 
     # Place()
@@ -137,9 +150,9 @@ def place():
     # Organiza os widgets em posições absolutas
     # EXEMPLO: ORGANIZAR OS WIDGETS EM POSIÇÕES ABSOLUTAS''').pack()
 
-    label = tk.Label(root, text="PLACE", font="Arial,16,Bold").pack(padx=200, anchor="w")
+    label = tk.Label(root, text="PLACE", font="Arial,16,Bold").pack(padx=200)
 
-    
+
     place_frame = tk.Frame(root, bg="lightblue", width=200, height=60)
     place_frame.place(x=50, y=50)   
     place_frame2 = tk.Frame(root, bg="lightgreen", width=200, height=60)
