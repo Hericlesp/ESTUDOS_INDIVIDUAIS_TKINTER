@@ -1,9 +1,5 @@
 import tkinter as tk
 
-window= tk.Tk()
-window.title("ORGANIZAÇÃO")
-window.geometry("800x800")
-window.config(bg="#f2f2f2")
 
 
 
@@ -127,8 +123,6 @@ def organizacao2():
     root.config(bg="#f2f2f2")
     # Frame
 
-btn_organizacao1 = tk.Button(window, text="ORGANIZAÇÃO \n PROPOSTAS", command=organizacao1).pack(padx=10, pady=10)
-btn_organizacao2 = tk.Button(window, text="ORGANIZAÇÃO \n PROPOSTAS", command=organizacao2).pack(padx=10, pady=10)
 
 
 
@@ -136,4 +130,4 @@ btn_organizacao2 = tk.Button(window, text="ORGANIZAÇÃO \n PROPOSTAS", command=
 
 
 
-window.mainloop()
+
