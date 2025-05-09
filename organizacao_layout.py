@@ -103,6 +103,25 @@ def organizacao1():
     # Cria uma nova janela independente
     # EXEMPLO: CRIAR UMA NOVA JANELA INDEPENDENTE''').pack()
     
+    def toplevel():
+        toplevel = tk.Toplevel(root)
+        toplevel.title("TOP LEVEL") 
+        toplevel.geometry("400x400")
+        toplevel.config(bg="#f2f2f2")
+        toplevel_frame = tk.Frame(toplevel, bg="lightgray", width=200, height=60)
+        toplevel_frame.pack(padx=10, pady=10)
+        toplevel_lbl = tk.Label(toplevel, text="TOP LEVEL", font="Arial,16,Bold").pack(padx=200, anchor="w")
+        descToplevel = tk.Label(toplevel, text='''.Toplevel(  )
+        # Cria uma nova janela independente
+        # EXEMPLO: CRIAR UMA NOVA JANELA INDEPENDENTE''').pack()
+        # Frame
+        frame = tk.Frame(toplevel, bg="lightblue", width=200, height=60)
+    frame.pack(padx=10, pady=10)
+        
+    btn_TOPLEVEL = tk.Button(root, text="TOP LEVEL", command=toplevel).pack(padx=10, pady=10)
+    
+
+    
 
 
 
