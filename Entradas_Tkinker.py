@@ -5,7 +5,7 @@ from tkinter import ttk
 
 root = tk.Tk() 
 root.title("ENTRADAS")
-root.geometry("800x800")
+root.geometry("500x800")
 root.config(bg="#f2f2f2")
 
 
