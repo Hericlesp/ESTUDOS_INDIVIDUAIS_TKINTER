@@ -1,4 +1,5 @@
 import tkinter as tk
+import acao
 import Saidas_Exibicao
 import Entradas_Tkinker
 import organizacao_layout
@@ -15,7 +16,7 @@ btn_entradas = tk.Button(main, text="ENTRADAS", command=Entradas_Tkinker.entrada
 
 btn_saidas = tk.Button(main, text=" SAIDAS ", command=Saidas_Exibicao.saidas).grid(row= 2, column= 1,padx=10, pady=10)
 
-btn_ACAO = tk.Button(main, text="  AÇÕES  ").grid(row= 2, column= 2,padx=10, pady=10)
+btn_ACAO = tk.Button(main, text="  AÇÕES  ", command=acao.acao).grid(row= 2, column= 2,padx=10, pady=10)
 
 btn_LAYOUT = tk.Button(main, text="  LAYOUT  \n SIMPLES", command=organizacao_layout.organizacao2).grid(row= 3, column= 0,padx=10, pady=10)
 
