@@ -3,7 +3,7 @@ import tkinter as tk
 
 root = tk.Tk()
 root.title("SAIDAS")
-root.geometry("800x800")
+root.geometry("500x800")
 root.config(bg="#f2f2f2")
 
 # COMANDOS DE SAIDA
