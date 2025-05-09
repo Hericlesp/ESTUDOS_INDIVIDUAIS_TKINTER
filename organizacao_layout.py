@@ -102,26 +102,88 @@ def organizacao1():
     descToplevel = tk.Label(root, text='''.Toplevel(  )
     # Cria uma nova janela independente
     # EXEMPLO: CRIAR UMA NOVA JANELA INDEPENDENTE''').pack()
-    def open_toplevel():
-        toplevel = tk.Toplevel(root)
-        toplevel.title("Toplevel Window")
-        toplevel.geometry("400x200")
-        toplevel.config(bg="lightgray")
-        toplevel_lbl = tk.Label(toplevel, text="Toplevel", font="Arial,16,Bold").pack(padx=10, anchor="w")
-        descToplevel = tk.Label(toplevel, text='''.Toplevel(  )
-        # Cria uma nova janela independente
-        # EXEMPLO: CRIAR UMA NOVA JANELA INDEPENDENTE''').pack()
-        toplevel_frame = tk.Frame(toplevel, bg="lightblue", width=200, height=60)  
-        toplevel_frame.pack(padx=10, pady=10)
-    bnt_toplevel = tk.Button(root, text="OPEN", command=open_toplevel).pack(padx=10, pady=10)
+    
 
-def organizacao2():
+def grids():
+    root = tk.Tk()
+    root.title("ORGANIZAÇÃO")
+    root.geometry("500x800")
+    root.config(bg="#f2f2f2")
+     # Grid()    
+    grid_lbl = tk.Label(root, text="GRID", font="Arial,16,Bold").pack(padx=200, anchor="w")
+    descGrid = tk.Label(root, text='''.grid(  )
+    # Organiza os widgets em uma grade
+    # EXEMPLO: ORGANIZAR OS WIDGETS EM UMA GRADE''').pack()
+    grid_frame = tk.Frame(root, bg="lightgreen", width=200, height=60)
+    grid_frame.pack(row=10, column=0, padx=10, pady=10)
+    grid_frame2 = tk.Frame(root, bg="lightyellow", width=200, height=60)
+    grid_frame2.pack(row=10, column=1, padx=10, pady=10)
+    grid_frame3 = tk.Frame(root, bg="lightpink", width=200, height=60)
+    grid_frame3.pack(row=11, column=0, padx=10, pady=10)
+    grid_frame4 = tk.Frame(root, bg="lightgray", width=200, height=60)
+    grid_frame4.pack(row=11, column=1, padx=10, pady=10)
+
+
+def place():
 
     root = tk.Tk()
     root.title("ORGANIZAÇÃO")
     root.geometry("500x800")
     root.config(bg="#f2f2f2")
-    # Frame
+
+    # Place()
+    place_lbl = tk.Label(root, text="PLACE", font="Arial,16,Bold").pack(padx=200, anchor="w")   
+    descPlace = tk.Label(root, text='''.place(  )
+    # Organiza os widgets em posições absolutas
+    # EXEMPLO: ORGANIZAR OS WIDGETS EM POSIÇÕES ABSOLUTAS''').pack()
+
+    label = tk.Label(root, text="PLACE", font="Arial,16,Bold").pack(padx=200, anchor="w")
+
+    
+    place_frame = tk.Frame(root, bg="lightblue", width=200, height=60)
+    place_frame.place(x=50, y=50)   
+    place_frame2 = tk.Frame(root, bg="lightgreen", width=200, height=60)
+    place_frame2.place(x=50, y=150) 
+    place_frame3 = tk.Frame(root, bg="lightyellow", width=200, height=60)
+    place_frame3.place(x=50, y=250)
+    place_frame4 = tk.Frame(root, bg="lightpink", width=200, height=60)
+    place_frame4.place(x=50, y=350)
+    place_frame5 = tk.Frame(root, bg="lightgray", width=200, height=60)
+    place_frame5.place(x=50, y=450)
+    place_frame6 = tk.Frame(root, bg="lightblue", width=200, height=60)
+    place_frame6.place(x=50, y=550)
+    place_frame7 = tk.Frame(root, bg="lightgreen", width=200, height=60)
+    place_frame7.place(x=50, y=650)
+    place_frame8 = tk.Frame(root, bg="lightyellow", width=200, height=60)
+    place_frame8.place(x=50, y=750)
+
+
+def organizacao2():
+
+    root = tk.Tk()
+    root.title("ORGANIZAÇÃO SIMPLES")
+    root.geometry("500x800")
+    root.config(bg="#f2f2f2")
+  
+    # Pack()
+    pack_lbl = tk.Label(root, text="PACK", font="Arial,16,Bold").pack(padx=200, anchor="w")
+    descPack = tk.Label(root, text='''.pack(  )
+    # Organiza os widgets em relação ao seu pai
+    # EXEMPLO: ORGANIZAR OS WIDGETS EM RELAÇÃO AO SEU PAI''').pack()
+    pack_frame = tk.Frame(root, bg="lightblue", width=200, height=60)   
+    pack_frame.pack(padx=10, pady=10)
+
+
+    btn_grig = tk.Button(root, text="GRID", command=grids).pack(padx=10, pady=10)
+
+    btn_place = tk.Button(root, text="PLACE", command=place).pack(padx=10, pady=10)
+
+   
+
+
+
+    
+
 
 
 
